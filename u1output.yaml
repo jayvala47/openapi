@@ -1,0 +1,5 @@
+---
+test:
+  name: '%value1'
+  age: '%{value2}'
+  version: '%{value3}'

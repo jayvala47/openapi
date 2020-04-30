@@ -11,7 +11,7 @@ value = sys.argv[1]
 
 yaml = YAML()
 data = yaml.load(file_name)
-data['paths']['paramaters'] = parameters
+data['paths']['/pet']['post']['tags']['parameters'] = parameters
 data['paths'][parameters] = dict(paramatersConfig=dict(ref=value))
 yaml.dump(data, sys.stdout)
 yaml.dump(data, Path('u.yaml'))
