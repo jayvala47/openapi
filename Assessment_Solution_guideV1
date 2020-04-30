@@ -1,0 +1,34 @@
+Assessment Solution Step by step guide
+
+Description of the updating file solution:-
+1)Payload.sh will hit an jenkins paramterised job
+2)Job will consume the Key and value from the payload
+3)Then Jenkins job with name swagger_update will execute an python script.
+4)Jenkins will first Clone the repo from github with name Openapi.
+5)Then jenkins job will Execute the Python file by passing an value sent by payload as an parameter and pass as an agrument to the Python script.
+6)First this Python script will Read and understand the swagger file cloned from Github.
+7)Then python script will set an object.
+8)Once object is set then it will update the value in our file which has to be updated.
+9)Once updated then it will print the output at run time.
+10)Finally it will Also open the file and display the changes.
+11)Then that changes will be comiited to git hub with file name as out.yaml.
+12)So now the file will be availbale to see the changes.
+
+Steps to do the changes/updates:-
+
+Step1 Clone repo with the geiven below https url
+Step2 Run payload.sh with agrument with a value
+Step3 View the repo with poc branch on open api.
+
+Jenkins job details
+http://ec2-204-236-241-168.compute-1.amazonaws.com:8080/job/swagger_update/api/
+
+Github repo details
+Repo name:- openapi
+Repo url :- https://github.com/jayvala47/openapi.git
+
+
+Technologies used while perform this assessment:-
+1)The server used for this assessment was created on AWS cloud using Terraform.
+2)Jenkins was installed using ansible.
+3)All the required config and server related changes were done through anisble and Terraform.
