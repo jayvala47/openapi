@@ -1,5 +1,12 @@
 paths:
- /pet:
-   post:
-    parameters:
-     changed: no
+  /pet:
+    post:
+      summary: Add a new pet to the store
+      x-swagger-router-controller: SampleController
+      description: ""
+      operationId: addPet
+      consumes:
+      produces:
+      parameters:
+          schema:
+            ref: novalue 
