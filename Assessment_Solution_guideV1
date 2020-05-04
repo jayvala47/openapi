@@ -21,7 +21,7 @@ Step2 Run payload.sh with agrument with a value
 Step3 View the repo with poc branch on open api.
 
 Jenkins job details
-http://ec2-204-236-241-168.compute-1.amazonaws.com:8080/job/swagger_update/api/
+http://ec2-52-90-102-175.compute-1.amazonaws.com:8080/job/swagger_update/api/
 
 Github repo details
 Repo name:- openapi
